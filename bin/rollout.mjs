@@ -2,7 +2,7 @@
 /**
  * rollout.mjs — roll out the vibecodereview council PR review to many repos.
  *
- * For each repo (owned by pooriaarab), in order:
+ * For each repo (owned by itsryanarmani), in order:
  *   1. Set the GitHub Actions secrets vibecodereview needs, from this process env.
  *   2. Skip the PR if `.github/workflows/vibecodereview.yml` already exists on the
  *      default branch.
@@ -57,7 +57,7 @@ const BRANCH = 'add-vibecodereview';
 const COMMIT_MESSAGE = 'Add vibecodereview council PR review';
 const PR_TITLE = 'Add vibecodereview council PR review';
 const PR_BODY =
-  'Adds owner-gated LLM-council PR review (pooriaarab/vibecodereview@v1). ' +
+  'Adds owner-gated LLM-council PR review (itsryanarmani/vibecodereview@v1). ' +
   'Set secrets are handled separately. Review before merge.';
 
 // The `${{ ... }}` sequences are literal GitHub Actions syntax. They sit in
@@ -89,7 +89,7 @@ const WORKFLOW_YAML =
     '      pull-requests: write',
     '      id-token: write',
     '    steps:',
-    '      - uses: pooriaarab/vibecodereview@v1',
+    '      - uses: itsryanarmani/vibecodereview@v1',
     '        with:',
     '          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}',
     '          claude_code_oauth_token_2: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN_2 }}',

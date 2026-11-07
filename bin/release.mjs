@@ -28,7 +28,7 @@ const major = `v${majorNum}`;
 const tag = `v${version}`;
 const REMOTE = process.env.RELEASE_REMOTE || "origin";
 const BRANCH = process.env.RELEASE_BRANCH || "main";
-const REPO = "pooriaarab/vibecodereview";
+const REPO = "itsryanarmani/vibecodereview";
 
 const git = (args, opts = {}) => {
   try {

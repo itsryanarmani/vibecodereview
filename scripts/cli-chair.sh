@@ -7,7 +7,7 @@
 #
 # Why CLI seats and not one HTTP completion: the old fallback was a single
 # OpenRouter call, so one key's monthly cap removed the whole fallback
-# (pooriaarab/clis#131, run 36781039423). A CLI seat is an agent with a shell,
+# (itsryanarmani/clis#131, run 36781039423). A CLI seat is an agent with a shell,
 # so it follows the full prompt: reads the files, pushes fixes when allowed,
 # writes the verdicts file to $VCR_CHAIR_VERDICTS, and posts with `gh`.
 #
@@ -99,7 +99,7 @@ if [ ${#VCR_PROMPT} -lt 200 ]; then
   exit 1
 fi
 # Repos that keep "Allow GitHub Actions to create and approve pull requests"
-# off (pooriaarab/clis does) reject `gh pr review --approve` from the
+# off (itsryanarmani/clis does) reject `gh pr review --approve` from the
 # workflow token. A clean review would then count as no review and every seat
 # would fail on the same wall.
 {
