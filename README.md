@@ -154,7 +154,7 @@ Set `CLAUDE_CODE_OAUTH_TOKEN` from `claude setup-token` for the normal chair pat
 Or wire the action directly:
 
 ```yaml
-- uses: pooriaarab/vibecodereview@v1
+- uses: itsryanarmani/vibecodereview@v1
   with:
     claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
     claude_code_oauth_token_2: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN_2 }}
@@ -179,7 +179,7 @@ Or wire the action directly:
 ### An Anthropic API key instead of seats
 
 ```yaml
-- uses: pooriaarab/vibecodereview@v1
+- uses: itsryanarmani/vibecodereview@v1
   with:
     anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
     github_token: ${{ github.token }}
@@ -246,7 +246,7 @@ Fix commits use `vibecodereview[bot]`. A commit hook removes model co-author tra
 
 ## Status
 
-The source manifest is version 0.1.1; published versions are stamped from release tags. Check npm and pinned Action tags for deployed versions. Local tests do not establish live provider availability. Use [GitHub issues](https://github.com/pooriaarab/vibecodereview/issues) for support. Run `npm test` for the Node test suite and council selfcheck. CI also runs oxlint and duplicate-code checks.
+The source manifest is version 0.1.1; published versions are stamped from release tags. Check npm and pinned Action tags for deployed versions. Local tests do not establish live provider availability. Use [GitHub issues](https://github.com/itsryanarmani/vibecodereview/issues) for support. Run `npm test` for the Node test suite and council selfcheck. CI also runs oxlint and duplicate-code checks.
 
 ## FAQ
 

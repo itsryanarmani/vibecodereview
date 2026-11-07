@@ -27,7 +27,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pooriaarab/vibecodereview.git"
+    "url": "git+https://github.com/itsryanarmani/vibecodereview.git"
   },
   "license": "MIT",
   "keywords": ["code-review", "pull-request", "GitHub Actions", "mcp", "cli", "OpenAI", "Google Gemini", "Moonshot AI", "OpenRouter", "Claude Code", "Devin", "Cursor", "Grok", "multi-model", "review-automation"]

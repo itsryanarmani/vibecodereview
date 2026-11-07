@@ -24,7 +24,7 @@ const HERE = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(HERE, "..");
 const PROVIDER_KEYS = ["OPENAI_API_KEY", "GEMINI_API_KEY", "MOONSHOT_API_KEY", "OPENROUTER_API_KEY"];
 const CLI_CHAIR_KEYS = ["DEVIN_CLI_KEY", "CURSOR_API_KEY", "XAI_API_KEY"];
-const REF = "pooriaarab/vibecodereview@v1"; // action ref repos pin to
+const REF = "itsryanarmani/vibecodereview@v1"; // action ref repos pin to
 
 const WORKFLOW = `name: vibecodereview
 on:
